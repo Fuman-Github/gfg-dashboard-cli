@@ -23,6 +23,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+              },
               "src/styles.css"
             ],
             "scripts": []
@@ -72,7 +75,13 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css",                      
+              }, 
+              
+              "../node_modules/font-awesome/css/font-awesome.min.css",
+              "../node_modules/primeng/resources/primeng.min.css",
+              "../node_modules/primeng/resources/themes/darkness/theme.css"              
             ],
             "scripts": [],
             "assets": [
@@ -123,5 +132,10 @@
       }
     }
   },
-  "defaultProject": "gfg-dashboard-cli"
+  "defaultProject": "gfg-dashboard-cli",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
