@@ -37,7 +37,7 @@ router-outlet {
 
  router-outlet + * {
    grid-area: content;
-   background: greenyellow; /* DEBUG: CSS is applied as expected if the background changes */
+   background: blue; /* DEBUG: CSS is applied as expected if the background changes */
 } 
 
 gfg-footer {

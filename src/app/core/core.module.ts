@@ -10,9 +10,10 @@ import { CacheInterceptor } from './http/cache.interceptor';
 // import { CoreRoutingModule } from './core-routing.module';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   imports: [
-    CommonModule,
+    CommonModule
   //  CoreRoutingModule
   ],
   declarations: [],
@@ -27,6 +28,8 @@ import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common
       provide: HttpClient,
       useClass: HttpService
     }
+  ],
+  exports: [
   ]
 })
 export class CoreModule {
