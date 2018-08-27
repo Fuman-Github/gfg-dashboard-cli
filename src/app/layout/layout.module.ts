@@ -7,8 +7,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SharedModule } from '../shared/shared.module';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { DashboardComponent } from '../features';
-
 
 @NgModule({
   imports: [
@@ -16,6 +14,6 @@ import { DashboardComponent } from '../features';
     LayoutRoutingModule,
     SharedModule
   ],
-  declarations: [LayoutComponent, HeaderComponent, NavMenuComponent, FooterComponent, DashboardComponent]
+  declarations: [LayoutComponent, HeaderComponent, NavMenuComponent, FooterComponent]
 })
 export class LayoutModule { }

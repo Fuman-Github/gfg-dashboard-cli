@@ -23,8 +23,9 @@ gfg-nav-menu {
   grid-area: nav-menu;
 }
 
-router-outlet {
-   display: none; // Fix router outlet from influencing the grid
+router-content {
+  display: none; // Fix router outlet from influencing the grid
+  // grid-area: router-content;
  }
 
 // Attempt at setting an attribute for the injected component
@@ -36,6 +37,7 @@ router-outlet {
 // Attempt at selecting the injected component (the subsequent sibling of the router)
 
  router-outlet + * {
+   display: none;
    grid-area: content;
    background: blue; /* DEBUG: CSS is applied as expected if the background changes */
 } 

@@ -15,14 +15,14 @@ export class NavMenuComponent implements OnInit {
 
   ngOnInit() {
       this.items = [
-          {label: 'Dashboard', icon: 'fa fa-fw fa-bar-chart', routerLink: ''},
+          {label: 'Dashboard', icon: 'fa fa-fw fa-bar-chart', routerLink: '/'},
           {label: 'Administrative', icon: 'fa fa-fw fa-calendar', routerLink: 'login'},
           {label: 'Documentation', icon: 'fa fa-fw fa-book'},
           {label: 'Support', icon: 'fa fa-fw fa-support'},
           {label: 'Social', icon: 'fa fa-fw fa-twitter'}
       ];
 
-      this.activeItem = this.items[2];
+      this.activeItem = this.items[0];
   }
 
 }
