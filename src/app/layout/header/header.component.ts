@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {NavService} from '../nav.service';
+
 
 @Component({
   selector: 'gfg-header',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public navService: NavService) { }
 
   ngOnInit() {
   }

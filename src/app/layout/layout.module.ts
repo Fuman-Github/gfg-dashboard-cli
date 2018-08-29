@@ -7,13 +7,18 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SharedModule } from '../shared/shared.module';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { MenuListItemComponent } from './menu-list-item/menu-list-item.component';
+// import {FlexLayoutModule} from '@angular/flex-layout';
+
 
 @NgModule({
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    SharedModule
+    SharedModule,
+    // FlexLayoutModule
   ],
-  declarations: [LayoutComponent, HeaderComponent, NavMenuComponent, FooterComponent]
+  declarations: [LayoutComponent, HeaderComponent, NavMenuComponent, FooterComponent, MenuListItemComponent],
+  providers: []
 })
 export class LayoutModule { }
